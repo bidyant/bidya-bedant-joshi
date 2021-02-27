@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to right, rgba(219, 219, 219, 0.925) ,rgba(247, 247, 247, 0.753),rgba(255, 255, 255, 0.507), rgba(255, 255, 255, 0.274));
   position: absolute;
   bottom: 0;
   top: 0;
