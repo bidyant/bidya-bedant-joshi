@@ -250,15 +250,13 @@ function setValues(arr,target)
 
 //add left side
 var arr_left=[
-  ['Web development',70],
-  ['ANDROID DEVELOPMENT',50],
-  ['JAVASCRIPT',75],
-  ['REACT JS',70],
-  ['REACT NATIVE',5],
+  ['Web development',50],
+  ['ANDROID DEVELOPMENT',70],
+  ['JAVASCRIPT',50],
+  ['REACT JS',10],
   ['PHOTO EDITING / ADOBE PHOTOSHOP',50],
-  ['VIDEO EDITING / ADOBE PRIMERER PRO',60],
-  ['3D GRAPHICS / BLENDER',45],
-  ['TYPING SPEED',65]
+  ['VIDEO EDITING / ADOBE PRIMERER PRO',30],
+  ['3D GRAPHICS / BLENDER',5],
 ];
 setValues(arr_left,"left_skills");
 
@@ -266,13 +264,11 @@ setValues(arr_left,"left_skills");
 
 var arr_right=[
   ['PHP',80],
-  ['DATABASE (MYSQL,MONGODB,FIREBASE)',50],
-  ['SQL',30],
   ['NODE.JS',80],
-  ['EXPRESS.JS',25],
   ['C PROGRAMMING',85],
   ['C++',80],
   ['JAVA',75],
+  ['Kotlin',30],
   ['PYTHON',55]
 ];
 
