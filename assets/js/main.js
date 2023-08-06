@@ -193,12 +193,43 @@
 
 //age automation
 
-var dob = new Date("08/30/2002");
- var month_diff = Date.now() - dob.getTime();
- var age_dt = new Date(month_diff); 
-  var year = age_dt.getUTCFullYear();
-  var age = Math.abs(year - 1970);
-document.getElementById("age").innerText=age;
+// var dob = new Date("08/30/2002");
+//  var month_diff = Date.now() - dob.getTime();
+//  var age_dt = new Date(month_diff); 
+//   var year = age_dt.getUTCFullYear();
+//   var age = Math.abs(year - 1970);
+// document.getElementById("age").innerText=age;
+
+
+ function calculateAge(birthDate) {
+      const dob = new Date(birthDate);
+      const ageInMilliseconds = Date.now() - dob.getTime();
+      const ageDate = new Date(ageInMilliseconds);
+
+      const years = ageDate.getUTCFullYear() - 1970;
+      const months = ageDate.getUTCMonth();
+      const days = ageDate.getUTCDate() - 1; // -1 to account for the 0-indexed day in the month
+      const hours = ageDate.getUTCHours();
+
+      return {
+        years: years,
+        months: months,
+        days: days,
+        hours: hours
+      };
+    }
+
+    // Example usage with the birth date: "08/30/2002"
+    const birthDate = "08/30/2002";
+    const ageT = calculateAge(birthDate);
+
+    const ageText = `${ageT.years} years, ${ageT.months} months, ${ageT.days} days and ${ageT.hours} hours.`;
+
+    document.getElementById("age").innerText = ageText;
+
+
+
+
 
 //get current url
 document.getElementById("website").innerText =window.location.href;
@@ -250,26 +281,26 @@ function setValues(arr,target)
 
 //add left side
 var arr_left=[
-  ['Web development',50],
-  ['ANDROID DEVELOPMENT',70],
-  ['JAVASCRIPT',50],
-  ['REACT JS',10],
-  ['PHOTO EDITING / ADOBE PHOTOSHOP',50],
-  ['VIDEO EDITING / ADOBE PRIMERER PRO',30],
-  ['3D GRAPHICS / BLENDER',5],
+  ['PHYSICS RESEARCH PAPER WRITING',60],
+  ['RESEARCH IN PHYSICS',30],
+  ['CONTENT WRITING FOR PHYSICS &amp MATH; ',70],
+  ['SCILAB / MATLAB',40],
+  ['STATISTICS',30],
+  ['TEACHING',50],
+  ['ELECTRONIC DEVICES &amp; IOT',25]
 ];
 setValues(arr_left,"left_skills");
 
 //add right side
 
 var arr_right=[
-  ['PHP',80],
-  ['NODE.JS',80],
-  ['C PROGRAMMING',85],
-  ['C++',80],
-  ['JAVA',75],
-  ['Kotlin',30],
-  ['PYTHON',55]
+  ['FULL STAC WEB DEVELOPMENT',60],
+  ['ANDROID APP DEVELOPMENT JAVA &amp; KOTLIN',80],
+  ['C &amp; C++ PROGRAMMING',65],
+  ['PYTHON PROGRAMMING',60],
+  ['PHOTOGRAPHY &amp; VIDEOGRAPHY',40],
+  ['PHOTO EDITING / ADOBE PHOTOSHOP',50],
+  ['VIDEO EDITING / ADOBE PRIMERER PRO',60]
 ];
 
 setValues(arr_right,"right_skills");
