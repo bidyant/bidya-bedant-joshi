@@ -228,12 +228,6 @@
     document.getElementById("age").innerText = ageText;
 
 
-
-
-
-//get current url
-document.getElementById("website").innerText =window.location.href;
-
 //add skills 
 
 function setValues(arr,target)
