@@ -193,13 +193,6 @@
 
 //age automation
 
-// var dob = new Date("08/30/2002");
-//  var month_diff = Date.now() - dob.getTime();
-//  var age_dt = new Date(month_diff); 
-//   var year = age_dt.getUTCFullYear();
-//   var age = Math.abs(year - 1970);
-// document.getElementById("age").innerText=age;
-
 
  function calculateAge(birthDate) {
       const dob = new Date(birthDate);
@@ -237,50 +230,23 @@ function setValues(arr,target)
     {
     var progress=document.createElement("div");
     progress.classList.add('progress');
-
     var span = document.createElement("span");
     span.classList.add("skill");
     span.innerText=arr[i][0];
 
-    var val=document.createElement("i");
-    val.classList.add("val");
-    if(arr[i][0]=='TYPING SPEED')
-    {
-    val.innerText=arr[i][1]+"WPM / 100 WPM";
-    }
-    else{
-    val.innerText=arr[i][1]+"%";
-    }
-
-    var progress_bar_wrap=document.createElement("div");
-    progress_bar_wrap.classList.add("progress-bar-wrap");
-
-
-    var progress_bar =document.createElement("div");
-    progress_bar.classList.add("progress-bar");
-    progress_bar.setAttribute("role","progressbar");
-    progress_bar.setAttribute("aria-valuenow",arr[i][1]);
-    progress_bar.setAttribute("aria-valuemin","20");
-    progress_bar.setAttribute("aria-valuemax","100");
-
-    progress_bar_wrap.appendChild(progress_bar);
-    span.appendChild(val);
-
     progress.appendChild(span);
-    progress.appendChild(progress_bar_wrap);
-
     container.appendChild(progress);
     }
 }
 
 //add left side
 var arr_left=[
-  ['PHYSICS RESEARCH PAPER WRITING',60],
-  ['RESEARCH IN PHYSICS',30],
-  ['CONTENT WRITING FOR PHYSICS & MATH; ',70],
-  ['SCILAB / MATLAB',40],
+  ['TEACHING PHYSICS',60],
+  ['COMPUTATIONAL PHYSICS',30],
+  ['CONTENT WRITING FOR PHYSICS & MATH',70],
+  ['SCILAB & MATLAB',40],
   ['STATISTICS',30],
-  ['TEACHING',50],
+  ['UI/UX FIGMA',50],
   ['ELECTRONIC DEVICES & IOT',25]
 ];
 setValues(arr_left,"left_skills");
