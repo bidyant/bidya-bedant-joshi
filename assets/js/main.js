@@ -230,47 +230,41 @@
 // setValues(arr_right,"right_skills");
 
 
-
 function setValues(arr, target) {
   var container = document.getElementById(target);
   for (let i = 0; i < arr.length; i++) {
     // Create the skill box container
     var skillBox = document.createElement("div");
     skillBox.classList.add('skill-box');
-    
+
     // Create the skill name span
     var span = document.createElement("span");
     span.classList.add("skill");
     span.innerText = arr[i][0];
-    
+
     // Create the skill level span
     var level = document.createElement("span");
     level.classList.add("skill-level");
     level.innerText = arr[i][1] + "%"; // Display skill level
-    
+
     // Append the skill name and level to the skill box
     skillBox.appendChild(span);
     skillBox.appendChild(level);
-    
+
     // Append the skill box to the container
     container.appendChild(skillBox);
   }
 }
 
-// Add skills to the left side
-var arr_left = [
+// Add skills to the single column
+var all_skills = [
   ['TEACHING PHYSICS', 60],
   ['COMPUTATIONAL PHYSICS', 30],
   ['CONTENT WRITING FOR PHYSICS & MATH', 70],
   ['SCILAB & MATLAB', 40],
   ['STATISTICS', 30],
   ['UI/UX FIGMA', 50],
-  ['ELECTRONIC DEVICES & IOT', 25]
-];
-setValues(arr_left, "left_skills");
-
-// Add skills to the right side
-var arr_right = [
+  ['ELECTRONIC DEVICES & IOT', 25],
   ['FULL STACK WEB DEVELOPMENT', 60],
   ['ANDROID APP DEVELOPMENT JAVA & KOTLIN', 80],
   ['C & C++ PROGRAMMING', 65],
@@ -279,4 +273,4 @@ var arr_right = [
   ['PHOTO EDITING / PHOTOSHOP & LIGHTROOM', 50],
   ['VIDEO EDITING / PREMIERE PRO', 60]
 ];
-setValues(arr_right, "right_skills");
+setValues(all_skills, "all_skills");

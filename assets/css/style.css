@@ -448,6 +448,7 @@ padding: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px; /* Space between skill boxes */
+  justify-content: center; /* Center the content horizontally */
 }
 
 .skills .skill-box {
@@ -461,6 +462,8 @@ padding: 20px;
   color: #45505b;
   font-size: medium;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit the maximum width */
 }
 
 .skills .skill-level {
@@ -469,14 +472,6 @@ padding: 20px;
   color: #888;
   font-size: small;
 }
-
-.skills .progress {
-  display: none; /* Hide the original progress bar elements */
-}
-
-
-
-
 
 
 
