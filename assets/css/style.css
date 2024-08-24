@@ -422,7 +422,7 @@ section {
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
-.skills-content{
+/* .skills-content{
 padding: 20px;
 }
 .skills .progress {
@@ -441,7 +441,46 @@ padding: 20px;
   font-family: "Poppins", sans-serif;
   color: #45505b;
   font-size: medium;
+} */
+
+.skills-content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between skill boxes */
 }
+
+.skills .skill-box {
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the box */
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+  font-size: medium;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.skills .skill-level {
+  margin-left: 10px;
+  font-weight: 400;
+  color: #888;
+  font-size: small;
+}
+
+.skills .progress {
+  display: none; /* Hide the original progress bar elements */
+}
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
