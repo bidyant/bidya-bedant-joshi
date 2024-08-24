@@ -185,51 +185,6 @@
     document.getElementById("age").innerText = ageText;
 
 
-// //add skills 
-
-// function setValues(arr,target)
-// {
-//     var container=document.getElementById(target);
-//     for(let i=0; i<arr.length;i++)
-//     {
-//     var progress=document.createElement("div");
-//     progress.classList.add('progress');
-//     var span = document.createElement("span");
-//     span.classList.add("skill");
-//     span.innerText=arr[i][0];
-
-//     progress.appendChild(span);
-//     container.appendChild(progress);
-//     }
-// }
-
-// //add left side
-// var arr_left=[
-//   ['TEACHING PHYSICS',60],
-//   ['COMPUTATIONAL PHYSICS',30],
-//   ['CONTENT WRITING FOR PHYSICS & MATH',70],
-//   ['SCILAB & MATLAB',40],
-//   ['STATISTICS',30],
-//   ['UI/UX FIGMA',50],
-//   ['ELECTRONIC DEVICES & IOT',25]
-// ];
-// setValues(arr_left,"left_skills");
-
-// //add right side
-
-// var arr_right=[
-//   ['FULL STAC WEB DEVELOPMENT',60],
-//   ['ANDROID APP DEVELOPMENT JAVA & KOTLIN',80],
-//   ['C & C++ PROGRAMMING',65],
-//   ['PYTHON PROGRAMMING',60],
-//   ['PHOTOGRAPHY & VIDEOGRAPHY',40],
-//   ['PHOTO EDITING / PHOTOSHOP & LIGHTROOM',50],
-//   ['VIDEO EDITING / PRIMERER PRO',60]
-// ];
-
-// setValues(arr_right,"right_skills");
-
-
 function setValues(arr, target) {
   var container = document.getElementById(target);
   for (let i = 0; i < arr.length; i++) {
@@ -242,14 +197,9 @@ function setValues(arr, target) {
     span.classList.add("skill");
     span.innerText = arr[i][0];
 
-    // Create the skill level span
-    var level = document.createElement("span");
-    level.classList.add("skill-level");
-    level.innerText = arr[i][1] + "%"; // Display skill level
-
     // Append the skill name and level to the skill box
     skillBox.appendChild(span);
-    skillBox.appendChild(level);
+
 
     // Append the skill box to the container
     container.appendChild(skillBox);
