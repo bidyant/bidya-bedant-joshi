@@ -195,7 +195,7 @@ function setValues(arr, target) {
     // Create the skill name span
     var span = document.createElement("span");
     span.classList.add("skill");
-    span.innerText = arr[i][0];
+    span.innerText = arr[i];
 
     // Append the skill name and level to the skill box
     skillBox.appendChild(span);
@@ -208,19 +208,19 @@ function setValues(arr, target) {
 
 // Add skills to the single column
 var all_skills = [
-  ['TEACHING PHYSICS', 60],
-  ['COMPUTATIONAL PHYSICS', 30],
-  ['CONTENT WRITING FOR PHYSICS & MATH', 70],
-  ['SCILAB & MATLAB', 40],
-  ['STATISTICS', 30],
-  ['UI/UX FIGMA', 50],
-  ['ELECTRONIC DEVICES & IOT', 25],
-  ['FULL STACK WEB DEVELOPMENT', 60],
-  ['ANDROID APP DEVELOPMENT JAVA & KOTLIN', 80],
-  ['C & C++ PROGRAMMING', 65],
-  ['PYTHON PROGRAMMING', 60],
-  ['PHOTOGRAPHY & VIDEOGRAPHY', 40],
-  ['PHOTO EDITING / PHOTOSHOP & LIGHTROOM', 50],
-  ['VIDEO EDITING / PREMIERE PRO', 60]
+  'Problem solving (DSA)',
+  'ANDROID APP DEVELOPMENT JAVA & KOTLIN',
+  'C & C++ PROGRAMMING (GUI Qt)',
+  'FULL STACK WEB DEVELOPMENT',
+  'PYTHON PROGRAMMING',
+  'ELECTRONIC DEVICES & IOT',
+  'Embedded Systems (Arduino)',
+  'LINUX | Git | cmake',
+  'PHOTOGRAPHY & VIDEOGRAPHY',
+  'PHOTO EDITING / PHOTOSHOP & LIGHTROOM',
+  'VIDEO EDITING / PREMIERE PRO',
+  'UI/UX FIGMA',
+  'PHYSICS, MATH, STATISTICS',
+  'COMPUTATIONAL PHYSICS (SCILAB & LAMPPS)'
 ];
 setValues(all_skills, "all_skills");
