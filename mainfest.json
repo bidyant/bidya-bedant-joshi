@@ -1,0 +1,17 @@
+{
+  "short_name": "Bidyant",
+  "name": "Bidya Bedant Joshi",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "theme-color": "#ffffff",
+  "background_color": "#000000",
+  "background-color": "#000000",
+  "description": "It is personal website of Bidya Bedant Joshi , Which carries a brief description about his life.",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "type": "image/png"
+    }
+  ]
+}
